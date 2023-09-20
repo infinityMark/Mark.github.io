@@ -9,7 +9,7 @@ for(let i = 0;i<=Arry_mark.length;i++){
         for(let z = 0;z<=Arry_mark.length;z++){
             for(let y = 0;y<=Arry_mark.length;y++){
                 for(let u = 0;u<=Arry_mark.length;u++){
-                    if(read*Arry_mark[i]+writing*Arry_mark[x]+listening*Arry_mark[z]+SBA*Arry_mark[y]+speaking*Arry_mark[u]){
+                    if(read*Arry_mark[i]+writing*Arry_mark[x]+listening*Arry_mark[z]+SBA*Arry_mark[y]+speaking*Arry_mark[u]>3){
                         
                     }
                 }
