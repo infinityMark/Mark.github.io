@@ -5,6 +5,7 @@ let listening = 300
 let SBA = 75
 let speaking = 75
 let time = 0
+let marks
 for(let i = 0;i<=Arry_mark.length;i++){
     for(let x = 0;x<=Arry_mark.length;x++){
         for(let z = 0;z<=Arry_mark.length;z++){
@@ -12,9 +13,12 @@ for(let i = 0;i<=Arry_mark.length;i++){
                 for(let u = 0;u<=Arry_mark.length;u++){
                     if(read*Arry_mark[i]+writing*Arry_mark[x]+listening*Arry_mark[z]+SBA*Arry_mark[y]+speaking*Arry_mark[u]>3000 && read*Arry_mark[i]+writing*Arry_mark[x]+listening*Arry_mark[z]+SBA*Arry_mark[y]+speaking*Arry_mark[u]<5000 && 
                         listening*Arry_mark[z]<1200 && read*Arry_mark[i]<1200 && writing*Arry_mark[x]<1500 && speaking*Arry_mark[y]<450 && SBA*Arry_mark[u]<375){
+                        marks = read*Arry_mark[i]+writing*Arry_mark[x]+listening*Arry_mark[z]+SBA*Arry_mark[y]+speaking*Arry_mark[u]
+                        marks.toString()
+                        console.log(marks.valueOf)
                         let work_Arry = []
                         time=time+1
-                        work_Arry.push(Arry_mark[i],Arry_mark[x],Arry_mark[z],Arry_mark[y],Arry_mark[u])
+                        work_Arry.push(Arry_mark[i],Arry_mark[x],Arry_mark[z],Arry_mark[y],Arry_mark[u],marks[0])
                         document.write(work_Arry)
                         document.write("<br>")
                         document.write(time)
